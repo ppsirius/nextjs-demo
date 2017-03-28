@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 import wrapBody from 'components/wrap-body';
+import sleep from 'utils/sleep';
 
 
 function AnotherPage({ from }) {
@@ -15,7 +16,8 @@ function AnotherPage({ from }) {
   );
 }
 
-AnotherPage.getInitialProps = ({ req }) => {
+AnotherPage.getInitialProps = async ({ req }) => {
+  await sleep(500);
   return {
     from: req ? 'server' : 'client',
   };
