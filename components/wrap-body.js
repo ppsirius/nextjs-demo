@@ -11,7 +11,7 @@ function WrappedLink({ children, isActive, ...props }) {
   );
 }
 
-export default WrappedComponent =>
+export default WrappedComponent => {
   function Body(props) {
     const { pathname } = props.url;
 
@@ -41,3 +41,8 @@ export default WrappedComponent =>
       </div>
     );
   }
+
+  Body.getInitialProps = WrappedComponent.getInitialProps;
+
+  return Body;
+}
