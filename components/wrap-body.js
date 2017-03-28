@@ -31,6 +31,10 @@ export default WrappedComponent => {
               <WrappedLink href="/another" isActive={pathname === '/another'} prefetch>
                 Another
               </WrappedLink>
+
+              <WrappedLink href="/blog" isActive={pathname === '/blog' || pathname === '/post'} prefetch>
+                Blog
+              </WrappedLink>
             </div>
           </div>
         </nav>
