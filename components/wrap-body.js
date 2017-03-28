@@ -25,10 +25,10 @@ export default WrappedComponent => {
         <nav className="navbar navbar-toggleable navbar-inverse bg-inverse">
           <div className="container">
             <div className="navbar-nav">
-              <WrappedLink href="/" isActive={pathname === '/'}>
+              <WrappedLink href="/" isActive={pathname === '/'} prefetch>
                 Index
               </WrappedLink>
-              <WrappedLink href="/another" isActive={pathname === '/another'}>
+              <WrappedLink href="/another" isActive={pathname === '/another'} prefetch>
                 Another
               </WrappedLink>
             </div>
