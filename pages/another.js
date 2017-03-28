@@ -1,17 +1,18 @@
 import Head from 'next/head';
 
+import wrapBody from 'components/wrap-body';
 
-export default function AnotherPage() {
+
+function AnotherPage() {
   return (
     <div>
       <Head>
         <title>Another - Next.js demo</title>
-        <link rel="stylesheet" href="/static/bootstrap.min.css" />
       </Head>
 
-      <main className="container my-5">
-        This is another page
-      </main>
+      This is another page
     </div>
   );
 }
+
+export default wrapBody(AnotherPage);
