@@ -329,7 +329,7 @@ babel-plugin-check-es2015-constants@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-module-resolver@2.5.0:
+babel-plugin-module-resolver@2.5.0, babel-plugin-module-resolver@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-2.5.0.tgz#a1204b4aeada066e8afb9b9f9c43e238d73d41bb"
   dependencies:
@@ -954,6 +954,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1:
   dependencies:
     inherits "^2.0.1"
 
+classname@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/classname/-/classname-0.0.0.tgz#43d171b484e354c7a293a5b78004df6852db20d6"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -1049,7 +1053,14 @@ create-hmac@^1.1.0, create-hmac@^1.1.2:
     create-hash "^1.1.0"
     inherits "^2.0.1"
 
-cross-spawn@5.1.0:
+cross-env@^3.2.4:
+  version "3.2.4"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-3.2.4.tgz#9e0585f277864ed421ce756f81a980ff0d698aba"
+  dependencies:
+    cross-spawn "^5.1.0"
+    is-windows "^1.0.0"
+
+cross-spawn@5.1.0, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -1793,6 +1804,10 @@ is-windows-bash@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/is-windows-bash/-/is-windows-bash-1.0.3.tgz#00132a47dcdacb00a9d68f3408a4d01d76215e88"
 
+is-windows@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.0.tgz#c61d61020c3ebe99261b781bd3d1622395f547f8"
+
 isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
@@ -1811,7 +1826,7 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -2329,7 +2344,7 @@ path-is-inside@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/path-is-inside/-/path-is-inside-1.0.2.tgz#365417dede44430d1c11af61027facf074bdfc53"
 
-path-match@1.2.4:
+path-match@1.2.4, path-match@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/path-match/-/path-match-1.2.4.tgz#a62747f3c7e0c2514762697f24443585b09100ea"
   dependencies:
